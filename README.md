@@ -1,2 +1,2 @@
 # VAWGSwiftApp
-Violence Against Women and Girls repository for development on a new evidence collection application
+Violence Against Women and Girls repository. Dev work for a new evidence collection application
