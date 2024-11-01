@@ -6,13 +6,32 @@
 //
 
 import SwiftUI
+import Combine
 
 @main
 struct VAWGApplicationApp: App {
+    @StateObject var appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-            MaskedHomePageView()
+            if !appState.showApp {
+                MaskedHomePageView()
+                    .environmentObject(appState).onAppear{
+                        print("MaskedHomePageView appeared")
+                    }
+            }
+            else{
+                TabView {
+                    JournalView()
+                        .tabItem{
+                        Label("Journal", systemImage: "book")
+                    }
+                }
+                .onAppear{
+                    print("JournalView appeared")
+                    
+                }
+            }
         }
     }
 }
