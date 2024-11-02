@@ -18,14 +18,16 @@ struct MaskedHomePageView: View {
     }
     
     var body: some View {
+        ZStack{
+            LinearGradient(gradient: Gradient(colors: [.blue,.white]), startPoint: .topLeading, endPoint: .bottomTrailing)
+        }
         VStack {
-            Button(action: buttonAction) {
-                Label("Sign In", systemImage: "arrow.up")
-            }
+            
+            AppStateButton()
+            
             Text("MASKED PAGE HERE")
         }
         .padding()
-        
     }
 }
 

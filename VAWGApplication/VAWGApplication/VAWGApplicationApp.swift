@@ -15,12 +15,14 @@ struct VAWGApplicationApp: App {
     var body: some Scene {
         WindowGroup {
             if !appState.showApp {
+                // Masked Weather application View
                 MaskedHomePageView()
                     .environmentObject(appState).onAppear{
                         print("MaskedHomePageView appeared")
                     }
             }
             else{
+                // VAWG Application:
                 TabView {
                     JournalView()
                         .tabItem{

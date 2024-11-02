@@ -13,6 +13,7 @@
 		5C4F38542CC53A26006BEA6A /* MaskedHomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F38532CC53A26006BEA6A /* MaskedHomePageView.swift */; };
 		5C5692DA2CD54C8F007D9073 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5692D92CD54C8F007D9073 /* AppState.swift */; };
 		5CEFF1C12CD551A20028AE3F /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFF1C02CD551A20028AE3F /* JournalView.swift */; };
+		5CEFF1C42CD69A020028AE3F /* AppStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFF1C32CD69A020028AE3F /* AppStateButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		5C4F38532CC53A26006BEA6A /* MaskedHomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskedHomePageView.swift; sourceTree = "<group>"; };
 		5C5692D92CD54C8F007D9073 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		5CEFF1C02CD551A20028AE3F /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		5CEFF1C32CD69A020028AE3F /* AppStateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +77,19 @@
 		5C4F38522CC53A03006BEA6A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5C4F38532CC53A26006BEA6A /* MaskedHomePageView.swift */,
+				5CEFF1C22CD699DC0028AE3F /* MaskedHomePageViews */,
 				5CEFF1C02CD551A20028AE3F /* JournalView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5CEFF1C22CD699DC0028AE3F /* MaskedHomePageViews */ = {
+			isa = PBXGroup;
+			children = (
+				5C4F38532CC53A26006BEA6A /* MaskedHomePageView.swift */,
+				5CEFF1C32CD69A020028AE3F /* AppStateButton.swift */,
+			);
+			path = MaskedHomePageViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CEFF1C12CD551A20028AE3F /* JournalView.swift in Sources */,
+				5CEFF1C42CD69A020028AE3F /* AppStateButton.swift in Sources */,
 				5C4F38442CC53760006BEA6A /* VAWGApplicationApp.swift in Sources */,
 				5C4F38542CC53A26006BEA6A /* MaskedHomePageView.swift in Sources */,
 				5C5692DA2CD54C8F007D9073 /* AppState.swift in Sources */,
