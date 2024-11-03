@@ -26,8 +26,8 @@ struct VAWGApplicationApp: App {
                 TabView {
                     JournalView()
                         .tabItem{
-                        Label("Journal", systemImage: "book")
-                    }
+                            Label("Journal", systemImage: "book")
+                        }
                 }
                 .onAppear{
                     print("JournalView appeared")

@@ -17,9 +17,15 @@ struct AppStateButton: View {
     
     var body: some View {
         Button(action: buttonAction){
-            Label("Sign in", systemImage:"arrow.up")
+            Label("Masked Button", systemImage:"arrow.up")
         }
         .buttonStyle(.borderedProminent).padding()
         
+    }
+}
+
+struct AppStateButton_Previews: PreviewProvider {
+    static var previews: some View {
+        AppStateButton().environmentObject(AppState())
     }
 }
