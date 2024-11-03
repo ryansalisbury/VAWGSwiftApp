@@ -10,17 +10,16 @@ import SwiftUI
 
 struct AppStateButton: View {
     @EnvironmentObject var appState: AppState
-    
-    func buttonAction(){
+
+    func buttonAction() {
         appState.showApp = true
     }
-    
+
     var body: some View {
-        Button(action: buttonAction){
-            Label("Masked Button", systemImage:"arrow.up")
+        Button(action: buttonAction) {
+            Label("Masked Button", systemImage: "arrow.up")
         }
         .buttonStyle(.borderedProminent).padding()
-        
     }
 }
 

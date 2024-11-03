@@ -5,33 +5,31 @@
 //  Created by Ryan Salisbury on 20/10/2024.
 //
 
-import SwiftUI
 import Combine
+import SwiftUI
 
 @main
 struct VAWGApplicationApp: App {
     @StateObject var appState = AppState()
-    
+
     var body: some Scene {
         WindowGroup {
             if !appState.showApp {
                 // Masked Weather application View
                 MaskedHomePageView()
-                    .environmentObject(appState).onAppear{
+                    .environmentObject(appState).onAppear {
                         print("MaskedHomePageView appeared")
                     }
-            }
-            else{
+            } else {
                 // VAWG Application:
                 TabView {
                     JournalView()
-                        .tabItem{
+                        .tabItem {
                             Label("Journal", systemImage: "book")
                         }
                 }
-                .onAppear{
+                .onAppear {
                     print("JournalView appeared")
-                    
                 }
             }
         }

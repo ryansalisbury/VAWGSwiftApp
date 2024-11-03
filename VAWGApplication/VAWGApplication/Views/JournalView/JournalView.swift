@@ -10,22 +10,20 @@ import SwiftUI
 // this is the quivalent of react component dec
 struct JournalView: View {
     // State management and logic goes in here
-    @State  var journalEntry: String = ""
+    @State var journalEntry: String = ""
     @FocusState private var journalTextIsFocused: Bool
-    
-    
-    
+
     // this is what is 'rendered'
     var body: some View {
-        
         VStack {
             TextField(
                 "TEST TEXT FIELD",
-                text: $journalEntry)
+                text: $journalEntry
+            )
             .focused($journalTextIsFocused).padding().textFieldStyle(RoundedBorderTextFieldStyle()).onSubmit {
                 print($journalEntry)
             }
-            
+
             Text("Jounral Entry above")
         }
         .padding()
