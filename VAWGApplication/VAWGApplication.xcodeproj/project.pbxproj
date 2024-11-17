@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		5C4F38482CC53761006BEA6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4F38472CC53761006BEA6A /* Assets.xcassets */; };
 		5C4F384B2CC53761006BEA6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4F384A2CC53761006BEA6A /* Preview Assets.xcassets */; };
 		5C4F38542CC53A26006BEA6A /* MaskedHomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F38532CC53A26006BEA6A /* MaskedHomePageView.swift */; };
+		5C507FDF2CDE6B30007EEFF5 /* TemperatureText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C507FDE2CDE6B19007EEFF5 /* TemperatureText.swift */; };
+		5C507FE12CEA850C007EEFF5 /* WeatherImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C507FE02CEA84FA007EEFF5 /* WeatherImage.swift */; };
+		5C507FE32CEA8A81007EEFF5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C507FE22CEA8A7A007EEFF5 /* LocationManager.swift */; };
+		5C507FE52CEA8E16007EEFF5 /* LocationText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C507FE42CEA8E05007EEFF5 /* LocationText.swift */; };
 		5C5692DA2CD54C8F007D9073 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5692D92CD54C8F007D9073 /* AppState.swift */; };
 		5CEFF1C12CD551A20028AE3F /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFF1C02CD551A20028AE3F /* JournalView.swift */; };
 		5CEFF1C42CD69A020028AE3F /* AppStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFF1C32CD69A020028AE3F /* AppStateButton.swift */; };
@@ -22,6 +26,10 @@
 		5C4F38472CC53761006BEA6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C4F384A2CC53761006BEA6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C4F38532CC53A26006BEA6A /* MaskedHomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskedHomePageView.swift; sourceTree = "<group>"; };
+		5C507FDE2CDE6B19007EEFF5 /* TemperatureText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureText.swift; sourceTree = "<group>"; };
+		5C507FE02CEA84FA007EEFF5 /* WeatherImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherImage.swift; sourceTree = "<group>"; };
+		5C507FE22CEA8A7A007EEFF5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5C507FE42CEA8E05007EEFF5 /* LocationText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationText.swift; sourceTree = "<group>"; };
 		5C5692D92CD54C8F007D9073 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		5CEFF1C02CD551A20028AE3F /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		5CEFF1C32CD69A020028AE3F /* AppStateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateButton.swift; sourceTree = "<group>"; };
@@ -77,6 +85,7 @@
 		5C4F38522CC53A03006BEA6A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5C507FE22CEA8A7A007EEFF5 /* LocationManager.swift */,
 				5CEFF1C62CD79BA30028AE3F /* JournalView */,
 				5CEFF1C22CD699DC0028AE3F /* MaskedHomePageViews */,
 			);
@@ -95,6 +104,9 @@
 		5CEFF1C52CD79B890028AE3F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5C507FE42CEA8E05007EEFF5 /* LocationText.swift */,
+				5C507FE02CEA84FA007EEFF5 /* WeatherImage.swift */,
+				5C507FDE2CDE6B19007EEFF5 /* TemperatureText.swift */,
 				5CEFF1C32CD69A020028AE3F /* AppStateButton.swift */,
 			);
 			path = Components;
@@ -118,12 +130,11 @@
 				5C4F383C2CC53760006BEA6A /* Sources */,
 				5C4F383D2CC53760006BEA6A /* Frameworks */,
 				5C4F383E2CC53760006BEA6A /* Resources */,
-				5C61F4672CD8286E004A8405 /* SwiftLint */,
-				5C61F4682CD82CB2004A8405 /* SwiftFormat */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5C84A2882CDE5D8900356807 /* PBXTargetDependency */,
 			);
 			name = VAWGApplication;
 			productName = VAWGApplication;
@@ -138,7 +149,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					5C4F383F2CC53760006BEA6A = {
 						CreatedOnToolsVersion = 14.2;
@@ -146,7 +157,6 @@
 				};
 			};
 			buildConfigurationList = 5C4F383B2CC53760006BEA6A /* Build configuration list for PBXProject "VAWGApplication" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -154,6 +164,10 @@
 				Base,
 			);
 			mainGroup = 5C4F38372CC53760006BEA6A;
+			packageReferences = (
+				5C84A2852CDE5C2C00356807 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 5C4F38412CC53760006BEA6A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -175,47 +189,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		5C61F4672CD8286E004A8405 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
-		};
-		5C61F4682CD82CB2004A8405 /* SwiftFormat */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftFormat;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export PATH=\"/opt/homebrew/bin:$PATH\"\nif which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		5C4F383C2CC53760006BEA6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -225,17 +198,29 @@
 				5CEFF1C42CD69A020028AE3F /* AppStateButton.swift in Sources */,
 				5C4F38442CC53760006BEA6A /* VAWGApplicationApp.swift in Sources */,
 				5C4F38542CC53A26006BEA6A /* MaskedHomePageView.swift in Sources */,
+				5C507FE12CEA850C007EEFF5 /* WeatherImage.swift in Sources */,
 				5C5692DA2CD54C8F007D9073 /* AppState.swift in Sources */,
+				5C507FE32CEA8A81007EEFF5 /* LocationManager.swift in Sources */,
+				5C507FE52CEA8E16007EEFF5 /* LocationText.swift in Sources */,
+				5C507FDF2CDE6B30007EEFF5 /* TemperatureText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C84A2882CDE5D8900356807 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5C84A2872CDE5D8900356807 /* SwiftLintBuildToolPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5C4F384C2CC53761006BEA6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -268,6 +253,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -296,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -328,6 +315,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -424,6 +412,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C84A2852CDE5C2C00356807 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.57.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C84A2872CDE5D8900356807 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C84A2852CDE5C2C00356807 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5C4F38382CC53760006BEA6A /* Project object */;
 }
