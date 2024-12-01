@@ -42,3 +42,10 @@ fastlane/test_output
 
 # App Code
 *.iml
+
+# macOS system files
+.DS_Store
+
+# Xcode user-specific files
+*.xcuserstate
+xcuserdata/
