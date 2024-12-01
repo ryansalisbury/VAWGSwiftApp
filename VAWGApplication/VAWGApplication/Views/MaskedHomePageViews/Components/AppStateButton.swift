@@ -12,7 +12,7 @@ struct AppStateButton: View {
     @EnvironmentObject var appState: AppState
 
     func buttonAction() {
-        appState.showApp = true
+        appState.showApp.toggle()
     }
 
     var body: some View {

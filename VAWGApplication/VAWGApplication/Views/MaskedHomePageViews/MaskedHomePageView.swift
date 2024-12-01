@@ -12,10 +12,6 @@ import SwiftUI
 
 struct MaskedHomePageView: View {
     @EnvironmentObject var appState: AppState
-    func buttonAction() {
-        print("Button is clicked")
-        appState.showApp = true
-    }
 
     var body: some View {
         ZStack {

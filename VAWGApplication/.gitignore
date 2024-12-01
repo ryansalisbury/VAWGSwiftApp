@@ -1,0 +1,44 @@
+# Xcode
+.DS_Store
+build/
+*.xcworkspace
+*.xccheckout
+*.xcuserstate
+
+# User-specific files
+DerivedData/
+xcuserdata/
+
+# Swift Package Manager
+/.build/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Archives
+*.xcarchive
+
+# Symbols
+*.dSYM.zip
+*.bcsymbolmap
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# IDEHelper
+.idea/
+
+# App Code
+*.iml

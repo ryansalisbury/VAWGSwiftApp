@@ -23,8 +23,10 @@ struct JournalView: View {
             .focused($journalTextIsFocused).padding().textFieldStyle(RoundedBorderTextFieldStyle()).onSubmit {
                 print($journalEntry)
             }
-
             Text("Jounral Entry above")
+            HStack {
+                AppStateButton()
+            }
         }
         .padding()
     }

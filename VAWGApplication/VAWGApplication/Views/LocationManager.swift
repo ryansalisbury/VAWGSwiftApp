@@ -17,6 +17,8 @@ final class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObje
         manager.delegate = self
         manager.startUpdatingLocation()
 
+        print("manager.authStatus:  ", manager.authorizationStatus)
+
         switch manager.authorizationStatus {
         case .notDetermined:
             manager.requestWhenInUseAuthorization()

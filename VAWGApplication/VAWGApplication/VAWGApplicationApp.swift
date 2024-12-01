@@ -17,9 +17,7 @@ struct VAWGApplicationApp: App {
             if !appState.showApp {
                 // Masked Weather application View
                 MaskedHomePageView()
-                    .environmentObject(appState).onAppear {
-                        print("MaskedHomePageView appeared")
-                    }
+                    .environmentObject(appState)
             } else {
                 // VAWG Application:
                 TabView {
@@ -27,10 +25,7 @@ struct VAWGApplicationApp: App {
                         .tabItem {
                             Label("Journal", systemImage: "book")
                         }
-                }
-                .onAppear {
-                    print("JournalView appeared")
-                }
+                }.environmentObject(appState)
             }
         }
     }
