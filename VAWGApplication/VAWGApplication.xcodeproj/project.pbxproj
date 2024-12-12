@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C4A13892D0B96C200E93838 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A13882D0B96BD00E93838 /* FeatureFlags.swift */; };
+		5C4A138D2D0B9C7800E93838 /* FabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A138C2D0B9C6300E93838 /* FabIcon.swift */; };
 		5C4F38442CC53760006BEA6A /* VAWGApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F38432CC53760006BEA6A /* VAWGApplicationApp.swift */; };
 		5C4F38482CC53761006BEA6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4F38472CC53761006BEA6A /* Assets.xcassets */; };
 		5C4F384B2CC53761006BEA6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4F384A2CC53761006BEA6A /* Preview Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C4A13882D0B96BD00E93838 /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
+		5C4A138C2D0B9C6300E93838 /* FabIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabIcon.swift; sourceTree = "<group>"; };
 		5C4F38402CC53760006BEA6A /* VAWGApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VAWGApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4F38432CC53760006BEA6A /* VAWGApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VAWGApplicationApp.swift; sourceTree = "<group>"; };
 		5C4F38472CC53761006BEA6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C4A138B2D0B9C5900E93838 /* FabIcon */ = {
+			isa = PBXGroup;
+			children = (
+				5C4A138C2D0B9C6300E93838 /* FabIcon.swift */,
+			);
+			path = FabIcon;
+			sourceTree = "<group>";
+		};
 		5C4F38372CC53760006BEA6A = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +79,7 @@
 			children = (
 				5C4F38522CC53A03006BEA6A /* Views */,
 				5C4F38432CC53760006BEA6A /* VAWGApplicationApp.swift */,
+				5C4A13882D0B96BD00E93838 /* FeatureFlags.swift */,
 				5C5692D92CD54C8F007D9073 /* AppState.swift */,
 				5C4F38472CC53761006BEA6A /* Assets.xcassets */,
 				5C4F38492CC53761006BEA6A /* Preview Content */,
@@ -85,6 +98,7 @@
 		5C4F38522CC53A03006BEA6A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5C4A138B2D0B9C5900E93838 /* FabIcon */,
 				5C507FE22CEA8A7A007EEFF5 /* LocationManager.swift */,
 				5CEFF1C62CD79BA30028AE3F /* JournalView */,
 				5CEFF1C22CD699DC0028AE3F /* MaskedHomePageViews */,
@@ -198,6 +212,8 @@
 				5CEFF1C42CD69A020028AE3F /* AppStateButton.swift in Sources */,
 				5C4F38442CC53760006BEA6A /* VAWGApplicationApp.swift in Sources */,
 				5C4F38542CC53A26006BEA6A /* MaskedHomePageView.swift in Sources */,
+				5C4A13892D0B96C200E93838 /* FeatureFlags.swift in Sources */,
+				5C4A138D2D0B9C7800E93838 /* FabIcon.swift in Sources */,
 				5C507FE12CEA850C007EEFF5 /* WeatherImage.swift in Sources */,
 				5C5692DA2CD54C8F007D9073 /* AppState.swift in Sources */,
 				5C507FE32CEA8A81007EEFF5 /* LocationManager.swift in Sources */,
