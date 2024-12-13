@@ -17,11 +17,12 @@ struct VAWGApplicationApp: App {
             if !appState.showApp {
                 // Masked Weather application View
                 ZStack(alignment: .bottomTrailing) {
-                    MaskedHomePageView()
-                        .environmentObject(appState)
-                    if featurFlags.fabIcon {
-                        // render fabIcon View
-                        FabIcon()
+                    if appState.calculatorApp {
+                        CalculatorAppView()
+                            .environmentObject(appState)
+                    } else if appState.weatherApp {
+                        WeatherAppView()
+                            .environmentObject(appState)
                     }
                 }
             } else {

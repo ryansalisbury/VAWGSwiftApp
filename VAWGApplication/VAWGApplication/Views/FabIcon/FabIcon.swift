@@ -7,39 +7,39 @@
 import SwiftUI
 
 struct FabIcon: View {
-    @State private var isFabOpen = true
-
-    func toggleFab() {
-        isFabOpen.toggle()
-    }
-
+    @State private var isFabOpen = false
+    @EnvironmentObject var appState: AppState
+    /* ideally we would like to make this
+     generic so we can push whatever actionButtons to the fab
+     icon */
     var body: some View {
         VStack {
             if isFabOpen {
-                Button {
-                    // action
-                } label: {
-                    Image(systemName: "numbers.rectangle")
-                        .font(.title.weight(.semibold))
-                        .padding().background(Color.yellow)
-                        .foregroundColor(.white).clipShape(.circle).shadow(radius: 4, x: 0, y: 4)
+//                switch(true) {
+//                case appState.calculatorApp:
+//                    WeatherAppButton()
+//                case appState.weatherApp:
+//                    CalculatorAppButton()
+//                default:
+//                    EmptyView()
+//                }
+                if appState.calculatorApp {
+                    WeatherAppButton()
                 }
-                Button {
-                    // action
-                } label: {
-                    Image(systemName: "cloud.rainbow.crop.fill")
-                        .font(.title.weight(.semibold))
-                        .padding().background(Color.yellow)
-                        .foregroundColor(.white).clipShape(.circle).shadow(radius: 4, x: 0, y: 4)
+                if appState.weatherApp {
+                    CalculatorAppButton()
                 }
             }
             Button {
-                toggleFab()
+                withAnimation { isFabOpen.toggle() }
             } label: {
-                Image(systemName: "apple.image.playground")
+                Image(systemName: isFabOpen ? "x.circle" : "apple.image.playground")
                     .font(.title.weight(.semibold))
-                    .padding().background(Color.orange)
-                    .foregroundColor(.white).clipShape(.circle).shadow(radius: 4, x: 0, y: 4)
+                    .padding()
+                    .background(Color.orange)
+                    .foregroundColor(.white)
+                    .rotationEffect(.degrees(isFabOpen ? 0 : 90))
+                    .clipShape(.circle).shadow(radius: 4, x: 0, y: 4)
             }
         }
     }

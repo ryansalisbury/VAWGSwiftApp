@@ -18,6 +18,9 @@
 		5C507FE32CEA8A81007EEFF5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C507FE22CEA8A7A007EEFF5 /* LocationManager.swift */; };
 		5C507FE52CEA8E16007EEFF5 /* LocationText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C507FE42CEA8E05007EEFF5 /* LocationText.swift */; };
 		5C5692DA2CD54C8F007D9073 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5692D92CD54C8F007D9073 /* AppState.swift */; };
+		5C6BE7282D0CB94000413E61 /* WeatherAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE7272D0CB93000413E61 /* WeatherAppButton.swift */; };
+		5C6BE72A2D0CB94F00413E61 /* CalculatorAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE7292D0CB94500413E61 /* CalculatorAppButton.swift */; };
+		5C6BE72F2D0CBB9D00413E61 /* CalculatorAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE72E2D0CBB9400413E61 /* CalculatorAppView.swift */; };
 		5CEFF1C12CD551A20028AE3F /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFF1C02CD551A20028AE3F /* JournalView.swift */; };
 		5CEFF1C42CD69A020028AE3F /* AppStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFF1C32CD69A020028AE3F /* AppStateButton.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +38,9 @@
 		5C507FE22CEA8A7A007EEFF5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5C507FE42CEA8E05007EEFF5 /* LocationText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationText.swift; sourceTree = "<group>"; };
 		5C5692D92CD54C8F007D9073 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		5C6BE7272D0CB93000413E61 /* WeatherAppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppButton.swift; sourceTree = "<group>"; };
+		5C6BE7292D0CB94500413E61 /* CalculatorAppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorAppButton.swift; sourceTree = "<group>"; };
+		5C6BE72E2D0CBB9400413E61 /* CalculatorAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorAppView.swift; sourceTree = "<group>"; };
 		5CEFF1C02CD551A20028AE3F /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		5CEFF1C32CD69A020028AE3F /* AppStateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,6 +59,7 @@
 		5C4A138B2D0B9C5900E93838 /* FabIcon */ = {
 			isa = PBXGroup;
 			children = (
+				5C6BE7262D0CB92900413E61 /* ActionButtons */,
 				5C4A138C2D0B9C6300E93838 /* FabIcon.swift */,
 			);
 			path = FabIcon;
@@ -106,11 +113,37 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		5CEFF1C22CD699DC0028AE3F /* MaskedHomePageViews */ = {
+		5C6BE7262D0CB92900413E61 /* ActionButtons */ = {
+			isa = PBXGroup;
+			children = (
+				5C6BE7292D0CB94500413E61 /* CalculatorAppButton.swift */,
+				5C6BE7272D0CB93000413E61 /* WeatherAppButton.swift */,
+			);
+			path = ActionButtons;
+			sourceTree = "<group>";
+		};
+		5C6BE72B2D0CBB4F00413E61 /* WeatherAppView */ = {
 			isa = PBXGroup;
 			children = (
 				5CEFF1C52CD79B890028AE3F /* Components */,
 				5C4F38532CC53A26006BEA6A /* MaskedHomePageView.swift */,
+			);
+			path = WeatherAppView;
+			sourceTree = "<group>";
+		};
+		5C6BE72C2D0CBB6300413E61 /* CalculatorAppView */ = {
+			isa = PBXGroup;
+			children = (
+				5C6BE72E2D0CBB9400413E61 /* CalculatorAppView.swift */,
+			);
+			path = CalculatorAppView;
+			sourceTree = "<group>";
+		};
+		5CEFF1C22CD699DC0028AE3F /* MaskedHomePageViews */ = {
+			isa = PBXGroup;
+			children = (
+				5C6BE72C2D0CBB6300413E61 /* CalculatorAppView */,
+				5C6BE72B2D0CBB4F00413E61 /* WeatherAppView */,
 			);
 			path = MaskedHomePageViews;
 			sourceTree = "<group>";
@@ -214,8 +247,11 @@
 				5C4F38542CC53A26006BEA6A /* MaskedHomePageView.swift in Sources */,
 				5C4A13892D0B96C200E93838 /* FeatureFlags.swift in Sources */,
 				5C4A138D2D0B9C7800E93838 /* FabIcon.swift in Sources */,
+				5C6BE7282D0CB94000413E61 /* WeatherAppButton.swift in Sources */,
 				5C507FE12CEA850C007EEFF5 /* WeatherImage.swift in Sources */,
+				5C6BE72F2D0CBB9D00413E61 /* CalculatorAppView.swift in Sources */,
 				5C5692DA2CD54C8F007D9073 /* AppState.swift in Sources */,
+				5C6BE72A2D0CB94F00413E61 /* CalculatorAppButton.swift in Sources */,
 				5C507FE32CEA8A81007EEFF5 /* LocationManager.swift in Sources */,
 				5C507FE52CEA8E16007EEFF5 /* LocationText.swift in Sources */,
 				5C507FDF2CDE6B30007EEFF5 /* TemperatureText.swift in Sources */,
