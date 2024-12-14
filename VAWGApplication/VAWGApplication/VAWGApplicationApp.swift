@@ -11,13 +11,20 @@ import SwiftUI
 @main
 struct VAWGApplicationApp: App {
     @StateObject var appState = AppState()
-
+    @StateObject var featurFlags = FeatureFlags()
     var body: some Scene {
         WindowGroup {
             if !appState.showApp {
                 // Masked Weather application View
-                MaskedHomePageView()
-                    .environmentObject(appState)
+                ZStack(alignment: .bottomTrailing) {
+                    if appState.calculatorApp {
+                        CalculatorAppView()
+                            .environmentObject(appState)
+                    } else if appState.weatherApp {
+                        WeatherAppView()
+                            .environmentObject(appState)
+                    }
+                }
             } else {
                 // VAWG Application:
                 TabView {

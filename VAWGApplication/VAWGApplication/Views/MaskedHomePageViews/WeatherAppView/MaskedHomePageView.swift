@@ -10,13 +10,15 @@ import SwiftUI
 
 // Home page view where masked application is handled
 
-struct MaskedHomePageView: View {
+struct WeatherAppView: View {
     @EnvironmentObject var appState: AppState
 
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [.blue, .white]),
-                           startPoint: .topLeading, endPoint: .bottomTrailing).edgesIgnoringSafeArea(.all)
+            LinearGradient(gradient: Gradient(
+                colors: [.blue, .white]),
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing).edgesIgnoringSafeArea(.all)
             VStack(spacing: 10) {
                 LocationText()
                 VStack(spacing: 10) {
@@ -26,13 +28,21 @@ struct MaskedHomePageView: View {
                 }
             }
             .padding()
-            Spacer()
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    FabIcon()
+                        .environmentObject(appState)
+                        .padding()
+                }
+            }
         }
     }
 }
 
 struct MaskedHomePageView_Previews: PreviewProvider {
     static var previews: some View {
-        MaskedHomePageView().environmentObject(AppState())
+        WeatherAppView().environmentObject(AppState())
     }
 }

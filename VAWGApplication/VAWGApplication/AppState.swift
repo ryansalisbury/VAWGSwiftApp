@@ -7,6 +7,8 @@
 
 import Foundation
 
-class AppState: ObservableObject {
+public class AppState: ObservableObject {
     @Published var showApp: Bool = false
+    @Published var weatherApp: Bool = false
+    @Published var calculatorApp: Bool = true
 }
