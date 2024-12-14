@@ -16,6 +16,16 @@
 		5C507FE32CEA8A81007EEFF5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C507FE22CEA8A7A007EEFF5 /* LocationManager.swift */; };
 		5C507FE52CEA8E16007EEFF5 /* LocationText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C507FE42CEA8E05007EEFF5 /* LocationText.swift */; };
 		5C5692DA2CD54C8F007D9073 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5692D92CD54C8F007D9073 /* AppState.swift */; };
+<<<<<<< Updated upstream
+=======
+		5C6BE7282D0CB94000413E61 /* WeatherAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE7272D0CB93000413E61 /* WeatherAppButton.swift */; };
+		5C6BE72A2D0CB94F00413E61 /* CalculatorAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE7292D0CB94500413E61 /* CalculatorAppButton.swift */; };
+		5C6BE72F2D0CBB9D00413E61 /* CalculatorAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE72E2D0CBB9400413E61 /* CalculatorAppView.swift */; };
+		5C6BE7322D0E1EB600413E61 /* CalculatorNumberButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE7312D0E1E9B00413E61 /* CalculatorNumberButtons.swift */; };
+		5C6BE7372D0E27B500413E61 /* CalculationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE7362D0E279C00413E61 /* CalculationBar.swift */; };
+		5C6BE73C2D0E2B7000413E61 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE73B2D0E2B6A00413E61 /* CalculatorModel.swift */; };
+		5C6BE7402D0E2DEA00413E61 /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE73F2D0E2DE000413E61 /* CalculatorController.swift */; };
+>>>>>>> Stashed changes
 		5CEFF1C12CD551A20028AE3F /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFF1C02CD551A20028AE3F /* JournalView.swift */; };
 		5CEFF1C42CD69A020028AE3F /* AppStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFF1C32CD69A020028AE3F /* AppStateButton.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +41,16 @@
 		5C507FE22CEA8A7A007EEFF5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5C507FE42CEA8E05007EEFF5 /* LocationText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationText.swift; sourceTree = "<group>"; };
 		5C5692D92CD54C8F007D9073 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+		5C6BE7272D0CB93000413E61 /* WeatherAppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppButton.swift; sourceTree = "<group>"; };
+		5C6BE7292D0CB94500413E61 /* CalculatorAppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorAppButton.swift; sourceTree = "<group>"; };
+		5C6BE72E2D0CBB9400413E61 /* CalculatorAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorAppView.swift; sourceTree = "<group>"; };
+		5C6BE7312D0E1E9B00413E61 /* CalculatorNumberButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorNumberButtons.swift; sourceTree = "<group>"; };
+		5C6BE7362D0E279C00413E61 /* CalculationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationBar.swift; sourceTree = "<group>"; };
+		5C6BE73B2D0E2B6A00413E61 /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
+		5C6BE73F2D0E2DE000413E61 /* CalculatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		5CEFF1C02CD551A20028AE3F /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		5CEFF1C32CD69A020028AE3F /* AppStateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +85,8 @@
 		5C4F38422CC53760006BEA6A /* VAWGApplication */ = {
 			isa = PBXGroup;
 			children = (
+				5C6BE73D2D0E2DCB00413E61 /* Controllers */,
+				5C6BE7382D0E2B2C00413E61 /* Models */,
 				5C4F38522CC53A03006BEA6A /* Views */,
 				5C4F38432CC53760006BEA6A /* VAWGApplicationApp.swift */,
 				5C5692D92CD54C8F007D9073 /* AppState.swift */,
@@ -98,6 +120,68 @@
 				5CEFF1C52CD79B890028AE3F /* Components */,
 				5C4F38532CC53A26006BEA6A /* MaskedHomePageView.swift */,
 			);
+<<<<<<< Updated upstream
+=======
+			path = WeatherAppView;
+			sourceTree = "<group>";
+		};
+		5C6BE72C2D0CBB6300413E61 /* CalculatorAppView */ = {
+			isa = PBXGroup;
+			children = (
+				5C6BE7302D0E1DC700413E61 /* Views */,
+				5C6BE72E2D0CBB9400413E61 /* CalculatorAppView.swift */,
+			);
+			path = CalculatorAppView;
+			sourceTree = "<group>";
+		};
+		5C6BE7302D0E1DC700413E61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C6BE7362D0E279C00413E61 /* CalculationBar.swift */,
+				5C6BE7312D0E1E9B00413E61 /* CalculatorNumberButtons.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5C6BE7382D0E2B2C00413E61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C6BE73A2D0E2B6000413E61 /* CalculatorModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C6BE73A2D0E2B6000413E61 /* CalculatorModels */ = {
+			isa = PBXGroup;
+			children = (
+				5C6BE73B2D0E2B6A00413E61 /* CalculatorModel.swift */,
+			);
+			path = CalculatorModels;
+			sourceTree = "<group>";
+		};
+		5C6BE73D2D0E2DCB00413E61 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C6BE73E2D0E2DD100413E61 /* CalcualtorController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5C6BE73E2D0E2DD100413E61 /* CalcualtorController */ = {
+			isa = PBXGroup;
+			children = (
+				5C6BE73F2D0E2DE000413E61 /* CalculatorController.swift */,
+			);
+			path = CalcualtorController;
+			sourceTree = "<group>";
+		};
+		5CEFF1C22CD699DC0028AE3F /* MaskedHomePageViews */ = {
+			isa = PBXGroup;
+			children = (
+				5C6BE72C2D0CBB6300413E61 /* CalculatorAppView */,
+				5C6BE72B2D0CBB4F00413E61 /* WeatherAppView */,
+			);
+>>>>>>> Stashed changes
 			path = MaskedHomePageViews;
 			sourceTree = "<group>";
 		};
@@ -195,11 +279,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CEFF1C12CD551A20028AE3F /* JournalView.swift in Sources */,
+				5C6BE73C2D0E2B7000413E61 /* CalculatorModel.swift in Sources */,
 				5CEFF1C42CD69A020028AE3F /* AppStateButton.swift in Sources */,
 				5C4F38442CC53760006BEA6A /* VAWGApplicationApp.swift in Sources */,
+				5C6BE7372D0E27B500413E61 /* CalculationBar.swift in Sources */,
+				5C6BE7322D0E1EB600413E61 /* CalculatorNumberButtons.swift in Sources */,
 				5C4F38542CC53A26006BEA6A /* MaskedHomePageView.swift in Sources */,
 				5C507FE12CEA850C007EEFF5 /* WeatherImage.swift in Sources */,
 				5C5692DA2CD54C8F007D9073 /* AppState.swift in Sources */,
+<<<<<<< Updated upstream
+=======
+				5C6BE7402D0E2DEA00413E61 /* CalculatorController.swift in Sources */,
+				5C6BE72A2D0CB94F00413E61 /* CalculatorAppButton.swift in Sources */,
+>>>>>>> Stashed changes
 				5C507FE32CEA8A81007EEFF5 /* LocationManager.swift in Sources */,
 				5C507FE52CEA8E16007EEFF5 /* LocationText.swift in Sources */,
 				5C507FDF2CDE6B30007EEFF5 /* TemperatureText.swift in Sources */,
