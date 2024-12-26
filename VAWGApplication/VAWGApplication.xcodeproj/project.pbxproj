@@ -16,8 +16,6 @@
 		5C507FE32CEA8A81007EEFF5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C507FE22CEA8A7A007EEFF5 /* LocationManager.swift */; };
 		5C507FE52CEA8E16007EEFF5 /* LocationText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C507FE42CEA8E05007EEFF5 /* LocationText.swift */; };
 		5C5692DA2CD54C8F007D9073 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5692D92CD54C8F007D9073 /* AppState.swift */; };
-<<<<<<< Updated upstream
-=======
 		5C6BE7282D0CB94000413E61 /* WeatherAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE7272D0CB93000413E61 /* WeatherAppButton.swift */; };
 		5C6BE72A2D0CB94F00413E61 /* CalculatorAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE7292D0CB94500413E61 /* CalculatorAppButton.swift */; };
 		5C6BE72F2D0CBB9D00413E61 /* CalculatorAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE72E2D0CBB9400413E61 /* CalculatorAppView.swift */; };
@@ -25,7 +23,6 @@
 		5C6BE7372D0E27B500413E61 /* CalculationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE7362D0E279C00413E61 /* CalculationBar.swift */; };
 		5C6BE73C2D0E2B7000413E61 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE73B2D0E2B6A00413E61 /* CalculatorModel.swift */; };
 		5C6BE7402D0E2DEA00413E61 /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BE73F2D0E2DE000413E61 /* CalculatorController.swift */; };
->>>>>>> Stashed changes
 		5CEFF1C12CD551A20028AE3F /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFF1C02CD551A20028AE3F /* JournalView.swift */; };
 		5CEFF1C42CD69A020028AE3F /* AppStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFF1C32CD69A020028AE3F /* AppStateButton.swift */; };
 /* End PBXBuildFile section */
