@@ -15,14 +15,6 @@ struct FabIcon: View {
     var body: some View {
         VStack {
             if isFabOpen {
-//                switch(true) {
-//                case appState.calculatorApp:
-//                    WeatherAppButton()
-//                case appState.weatherApp:
-//                    CalculatorAppButton()
-//                default:
-//                    EmptyView()
-//                }
                 if appState.calculatorApp {
                     WeatherAppButton()
                 }

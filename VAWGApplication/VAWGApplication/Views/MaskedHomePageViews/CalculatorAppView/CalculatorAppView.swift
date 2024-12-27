@@ -12,6 +12,8 @@ struct CalculatorAppView: View {
         ZStack(alignment: .bottomTrailing) {
             VStack {
                 Text("CalculatorAppView").font(.largeTitle)
+                CalculationBar().padding(.bottom)
+                CalculatorNumberButtons()
                 Spacer()
             }
             FabIcon().environmentObject(appState)

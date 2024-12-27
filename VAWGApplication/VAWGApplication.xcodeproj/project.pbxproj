@@ -45,6 +45,24 @@
 		5CEFF1C32CD69A020028AE3F /* AppStateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5C4BA8402D1EBD9B004F98D5 /* Controllers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5C4BA8452D1EBDDB004F98D5 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C4BA84A2D1EBEA8004F98D5 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		5C4F383D2CC53760006BEA6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -84,6 +102,8 @@
 		5C4F38422CC53760006BEA6A /* VAWGApplication */ = {
 			isa = PBXGroup;
 			children = (
+				5C4BA8452D1EBDDB004F98D5 /* Models */,
+				5C4BA8402D1EBD9B004F98D5 /* Controllers */,
 				5C4F38522CC53A03006BEA6A /* Views */,
 				5C4F38432CC53760006BEA6A /* VAWGApplicationApp.swift */,
 				5C4A13882D0B96BD00E93838 /* FeatureFlags.swift */,
@@ -134,6 +154,7 @@
 		5C6BE72C2D0CBB6300413E61 /* CalculatorAppView */ = {
 			isa = PBXGroup;
 			children = (
+				5C4BA84A2D1EBEA8004F98D5 /* Views */,
 				5C6BE72E2D0CBB9400413E61 /* CalculatorAppView.swift */,
 			);
 			path = CalculatorAppView;
@@ -182,6 +203,11 @@
 			);
 			dependencies = (
 				5C84A2882CDE5D8900356807 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5C4BA8402D1EBD9B004F98D5 /* Controllers */,
+				5C4BA8452D1EBDDB004F98D5 /* Models */,
+				5C4BA84A2D1EBEA8004F98D5 /* Views */,
 			);
 			name = VAWGApplication;
 			productName = VAWGApplication;
