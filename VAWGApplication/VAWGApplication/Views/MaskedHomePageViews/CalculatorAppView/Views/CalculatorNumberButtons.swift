@@ -14,6 +14,7 @@ struct CalculatorNumberButtons: View {
                                      ["1", "2", "3", "+"],
                                      ["0", ".", "=", "/"]]
     let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    @ObservedObject var calc: CalculatorController
     var body: some View {
         Text("CalculatorNumberButtons").font(.largeTitle)
         LazyVGrid(columns: columns) {
@@ -22,6 +23,8 @@ struct CalculatorNumberButtons: View {
                     ForEach(row, id: \.self) { number in
                         Button {
                             // action
+                            print("button clicked: ", number)
+                            calc.buttonClicked(number)
                         } label: {
                             Text("\(number)").frame(width: 70, height: 70)
                                 .foregroundColor(.black)

@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct CalculationBar: View {
+    @ObservedObject var calc: CalculatorController
     var body: some View {
-        Text("Calculation Bar")
+        VStack {
+            Text(calc.currentInput).onAppear {
+                print(calc.currentInput)
+            }
+        }
     }
 }

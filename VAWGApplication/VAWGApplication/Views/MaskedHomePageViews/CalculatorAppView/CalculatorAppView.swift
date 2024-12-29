@@ -8,12 +8,13 @@ import SwiftUI
 
 struct CalculatorAppView: View {
     @EnvironmentObject var appState: AppState
+    @StateObject var calcController = CalculatorController()
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             VStack {
                 Text("CalculatorAppView").font(.largeTitle)
-                CalculationBar().padding(.bottom)
-                CalculatorNumberButtons()
+                CalculationBar(calc: calcController).padding(.bottom)
+                CalculatorNumberButtons(calc: calcController)
                 Spacer()
             }
             FabIcon().environmentObject(appState)

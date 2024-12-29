@@ -7,18 +7,25 @@
 
 import SwiftUI
 
-class CalculatorController {
+class CalculatorController: ObservableObject {
     var model = CalculatorModel()
-    var currentInput = ""
+    @Published var currentInput: String = ""
+
+    var operators: [String] = ["+", "-", "*", "/"]
 
     func buttonClicked(_ value: String) {
         switch value {
         case "0"..."9":
             currentInput.append(value)
         case "=":
-            model.calcualteResult()
+            print(model.calcualteResult())
+            currentInput = model.calcualteResult()
         default:
-            print("no cases hit in controller")
+            if operators.contains(value) {
+                model.setOperand(Int(currentInput) ?? 0)
+                currentInput.append(" \(value) ")
+                model.setOperator(value)
+            }
         }
     }
 }
