@@ -13,16 +13,22 @@ class CalculatorModel {
     var currentOperand = 0
     var storedOperand: Int = 0
     var currentOperator: String = ""
-
     func setOperand(_ operand: Int) {
+        print("operand: \(operand)")
         currentOperand = operand
     }
 
     // Set the operator (e.g., when "+" is pressed)
-    func setOperator(_ operator: String) {
-        currentOperator = `operator`
-        storedOperand = currentOperand
-        // currentOperand = 0
+    func setOperator(_ operator: String, isMultipleOperators: Bool) {
+        if isMultipleOperators {
+            storedOperand = Int(calcualteResult()) ?? 10
+            currentOperand = 0
+            currentOperator = `operator`
+        } else {
+            currentOperator = `operator`
+            storedOperand = currentOperand
+            currentOperand = 0
+        }
     }
 
     // calculate result function
@@ -41,7 +47,6 @@ class CalculatorModel {
         default:
             result = currentOperand
         }
-        // storedOperand = result
         return String(result)
     }
 }

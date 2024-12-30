@@ -11,8 +11,7 @@ struct CalculatorAppView: View {
     @StateObject var calcController = CalculatorController()
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
-            VStack {
-                Text("CalculatorAppView").font(.largeTitle)
+            VStack(alignment: .leading, spacing: 20) {
                 CalculationBar(calc: calcController).padding(.bottom)
                 CalculatorNumberButtons(calc: calcController)
                 Spacer()

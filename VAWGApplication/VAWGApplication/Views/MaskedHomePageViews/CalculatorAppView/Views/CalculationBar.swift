@@ -10,8 +10,9 @@ import SwiftUI
 struct CalculationBar: View {
     @ObservedObject var calc: CalculatorController
     var body: some View {
-        VStack {
-            Text(calc.currentInput).onAppear {
+        HStack {
+            Text(calc.currentInput).font(.largeTitle.weight(.bold)).padding()
+                .onAppear {
                 print(calc.currentInput)
             }
         }
