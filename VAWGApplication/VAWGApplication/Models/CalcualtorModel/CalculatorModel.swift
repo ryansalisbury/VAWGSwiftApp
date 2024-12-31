@@ -33,10 +33,10 @@ class CalculatorModel {
 
     // calculate result function
     func calcualteResult() -> String {
+        print("storedOperand \(storedOperand)")
+        print("currentOperand: \(currentOperand)")
         switch currentOperator {
         case "+":
-            print("storedOperand \(storedOperand)")
-            print("currentOperand: \(currentOperand)")
             result = storedOperand + currentOperand
         case "-":
             result = storedOperand - currentOperand
@@ -47,6 +47,7 @@ class CalculatorModel {
         default:
             result = currentOperand
         }
+        // storedOperand = result
         return String(result)
     }
 }
