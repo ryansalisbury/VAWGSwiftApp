@@ -11,9 +11,10 @@ struct CalculatorAppView: View {
     @StateObject var calcController = CalculatorController()
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
+            Color.black.ignoresSafeArea()
             VStack(alignment: .leading, spacing: 20) {
                 CalculationBar(calc: calcController).padding(.bottom)
-                CalculatorNumberButtons(calc: calcController)
+                CalculatorNumberButtons(calc: calcController).environmentObject(AppState())
                 Spacer()
             }
             FabIcon().environmentObject(appState)

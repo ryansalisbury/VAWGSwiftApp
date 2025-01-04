@@ -11,7 +11,11 @@ struct CalculationBar: View {
     @ObservedObject var calc: CalculatorController
     var body: some View {
         HStack {
-            Text(calc.currentInput).font(.largeTitle.weight(.bold)).padding()
+            Text(calc.currentInput)
+                .frame(height: 70)
+                .font(.system(size: 70, weight: .light))
+                .foregroundStyle(.white)
+                .padding()
                 .onAppear {
                 print(calc.currentInput)
             }
